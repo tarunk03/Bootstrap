@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Control in Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+</head>
+<body class="my-5">
+    <div class="container my-5">
+        <h4 class="text-danger mb-3">Form Control in Bootstrap</h4>
+        <p class="bg-warning">Enhance the appearence and functionality of 
+        text <b>input and textarea</b> elements by applying 
+        custom styles, adjusting sizes, refining focus
+        states, and incorporating additional features.</p> 
+        <div class="row">
+            <div class="col-md-8 col-lg-6">
+                <!--Bootstrap Form-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Form Control</p>
+                <div class="mb-3">
+                    <label for="firstname" class="form-label">First Name</label>
+                    <input type="text" id="firstname" placeholder="Enter First Name" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <label for="lastname" class="form-label">Last Name</label>
+                    <input type="text" id="lastname" placeholder="Enter Last Name" class="form-control" />
+                </div>
+
+                <!--Sizing-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Sizing</p>
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-sm" placeholder="Small" />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Medium" />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control form-control-lg" placeholder="Large" />
+                </div>
+
+                <!--Form Text-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Form Text</p>
+                <div class="mb-3">
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" id="username" placeholder="Enter User Name" class="form-control" />
+                    <div class="form-text">Username must be 15 character [A-Z]</div>
+                </div>
+
+                <!--Disabled and Readonly-->
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">Disabled & Readonly</p>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Disabled Input" disabled />
+                </div>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Readonly Input" readonly />
+                </div>
+
+                <!--Plain Text: input box  borders will be removed -->
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">Plain Text</p>
+                <div class="mb-3">
+                    <input type="text" class="form-control-plaintext" placeholder="Plain Text" />
+                </div>
+
+                <!--Input File -->
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">HTML File Input</p>
+                <div class="mb-3">
+                    <input type="file" />
+                </div>
+
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">Bootstrap File Input</p>
+                <div class="mb-3">
+                    <input type="file" class="form-control" />
+                </div>
+
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">Bootstrap Multiple File Input</p>
+                <div class="mb-3">
+                    <input type="file" class="form-control" multiple />
+                </div>
+
+                <p class="fw-semibold text-primary border-bottom 
+                border-primary py-3">Bootstrap Disabled File Input</p>
+                <div class="mb-3">
+                    <input type="file" class="form-control" disabled />
+                </div>
+
+                <!--File Input Sizing-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Bootstrap File Input Sizing</p>
+                <div class="mb-3">
+                    <input type="file" class="form-control form-control-sm" />
+                </div>
+                <div class="mb-3">
+                    <input type="file" class="form-control" />
+                </div>
+                <div class="mb-3">
+                    <input type="file" class="form-control form-control-lg" />
+                </div>
+
+                <!--Input Color-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">HTML Color Input</p>
+                <div class="mb-3">
+                    <input type="color" value="#150af0" title="Choose Your Color"/>
+                </div>
+
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Bootstrap Color Input</p>
+                <div class="mb-3">
+                    <input type="color" value="#150af0" title="Choose Your Color"
+                    class="form-control form-control-color" />
+                </div>
+
+                <!--Datalist-->
+                <p class="fw-semibold text-primary
+                border-bottom border-primary py-3">Datalist</p>
+                <div class="mb-3">
+                    <label class="form-label" for="datalist">Datalist Example</label>
+                    <input class="form-control" id="datalist" placeholder="Type to Search..." list="datalistOptions" />
+                    <datalist id="datalistOptions">
+                        <option value="HTML"></option>
+                        <option value="CSS"></option>
+                        <option value="Bootstrap"></option>
+                        <option value="Javascript"></option>
+                        <option value="Java"></option>
+                        <option value="Python"></option>
+                    </datalist>
+                </div>
+            <!--col end -->
+            </div>
+        <!--row end -->
+        </div>   
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
